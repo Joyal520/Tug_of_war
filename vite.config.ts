@@ -5,5 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/Tug_of_war/',
+  build: {
+    outDir: 'docs',
+  },
   plugins: [react(), tailwindcss()],
 })
